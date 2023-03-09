@@ -24,6 +24,7 @@
 		59F548AD29B9E9810097FF81 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		59F548AF29B9EDEA0097FF81 /* pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pop.swift; sourceTree = "<group>"; };
 		59F548B329B9F8720097FF81 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
+		59F548B429B9FD4F0097FF81 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; name = Configuration.storekit; path = "In App purchase practice/Configuration.storekit"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +42,7 @@
 		59F5489229B9E5BF0097FF81 = {
 			isa = PBXGroup;
 			children = (
+				59F548B429B9FD4F0097FF81 /* Configuration.storekit */,
 				59F5489D29B9E5BF0097FF81 /* In App purchase practice */,
 				59F5489C29B9E5BF0097FF81 /* Products */,
 				59F548AC29B9E9810097FF81 /* Frameworks */,

@@ -5,18 +5,18 @@
   ],
   "products" : [
     {
-      "displayPrice" : "100.99",
+      "displayPrice" : "0.99",
       "familyShareable" : false,
-      "internalID" : "5C8670CC",
+      "internalID" : "F3E79B7A",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "Apple Bat",
+          "displayName" : "Bat",
           "locale" : "en_US"
         }
       ],
-      "productID" : "com.apple.ball",
-      "referenceName" : "Apple Ball",
+      "productID" : "com.temporary.id",
+      "referenceName" : "Bat",
       "type" : "NonConsumable"
     }
   ],

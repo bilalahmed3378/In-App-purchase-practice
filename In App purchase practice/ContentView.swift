@@ -41,7 +41,7 @@ class ViewModel : ObservableObject {
     func fetchProducts(){
         async{
             do{
-                let products = try await Product.products(for: ["com.apple.ball"])
+                let products = try await Product.products(for: ["com.temporary.id"])
                 self.products = products
             }
             catch{
@@ -53,7 +53,7 @@ class ViewModel : ObservableObject {
         async{
             guard let product = products.first else {return}
         do{
-            _ = try await product.purchase()
+            let result = try await product.purchase()
         }
         catch{
             print(error)

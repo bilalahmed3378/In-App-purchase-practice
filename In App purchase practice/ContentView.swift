@@ -6,21 +6,59 @@
 //
 
 import SwiftUI
+import StoreKit
+
+
 
 struct ContentView: View {
+    @StateObject var viewModel = ViewModel()
+   
+   
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        NavigationView{
+            
+            Button(action: {
+                viewModel.purchase()
+            }, label: {
+                Text("Buy")
+
+            })
+            .onAppear{
+                viewModel.fetchProducts()
+
+            }
+          
         }
-        .padding()
+    
+        
+    }
+   
+}
+
+
+class ViewModel : ObservableObject {
+    var products : [Product] = []
+    func fetchProducts(){
+        async{
+            do{
+                let products = try await Product.products(for: ["com.apple.ball"])
+                self.products = products
+            }
+            catch{
+                print(error)
+            }
+        }
+    }
+    func purchase(){
+        async{
+            guard let product = products.first else {return}
+        do{
+            _ = try await product.purchase()
+        }
+        catch{
+            print(error)
+        }
+    }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
-}

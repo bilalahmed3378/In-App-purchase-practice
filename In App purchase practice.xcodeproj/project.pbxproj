@@ -11,6 +11,8 @@
 		59F548A129B9E5BF0097FF81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F548A029B9E5BF0097FF81 /* ContentView.swift */; };
 		59F548A329B9E5C80097FF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F548A229B9E5C80097FF81 /* Assets.xcassets */; };
 		59F548A629B9E5C80097FF81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 59F548A529B9E5C80097FF81 /* Preview Assets.xcassets */; };
+		59F548AE29B9E9820097FF81 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F548AD29B9E9810097FF81 /* StoreKit.framework */; };
+		59F548B029B9EDEA0097FF81 /* pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F548AF29B9EDEA0097FF81 /* pop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,9 @@
 		59F548A029B9E5BF0097FF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		59F548A229B9E5C80097FF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		59F548A529B9E5C80097FF81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59F548AD29B9E9810097FF81 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		59F548AF29B9EDEA0097FF81 /* pop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pop.swift; sourceTree = "<group>"; };
+		59F548B329B9F8720097FF81 /* Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Configuration.storekit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59F548AE29B9E9820097FF81 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +43,7 @@
 			children = (
 				59F5489D29B9E5BF0097FF81 /* In App purchase practice */,
 				59F5489C29B9E5BF0097FF81 /* Products */,
+				59F548AC29B9E9810097FF81 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +60,8 @@
 			children = (
 				59F5489E29B9E5BF0097FF81 /* In_App_purchase_practiceApp.swift */,
 				59F548A029B9E5BF0097FF81 /* ContentView.swift */,
+				59F548B329B9F8720097FF81 /* Configuration.storekit */,
+				59F548AF29B9EDEA0097FF81 /* pop.swift */,
 				59F548A229B9E5C80097FF81 /* Assets.xcassets */,
 				59F548A429B9E5C80097FF81 /* Preview Content */,
 			);
@@ -65,6 +74,14 @@
 				59F548A529B9E5C80097FF81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59F548AC29B9E9810097FF81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F548AD29B9E9810097FF81 /* StoreKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +156,7 @@
 			files = (
 				59F548A129B9E5BF0097FF81 /* ContentView.swift in Sources */,
 				59F5489F29B9E5BF0097FF81 /* In_App_purchase_practiceApp.swift in Sources */,
+				59F548B029B9EDEA0097FF81 /* pop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
